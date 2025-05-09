@@ -1,0 +1,253 @@
+body{
+  overflow-x:hidden;
+  height: 2000px;
+}
+
+.bar{
+  height: 150px;
+  width: 110%;
+  position: absolute;
+  background:linear-gradient( 90deg, rgb(88, 180, 255), rgb(255, 255, 255));
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  margin: -8px;
+}
+
+.icon{
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+  margin: 25px;
+  position: absolute;
+  cursor: pointer;
+  animation: iconmove 2s;
+}
+
+@keyframes iconmove{
+  0%{
+    margin-left: -100px;
+    rotate: 360deg;
+  }
+}
+
+.name{
+  font-family:Oswald;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 140px;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.scname{
+  font-family:Oswald;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 360px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.all_buttons{
+  margin-top: 80px;
+  margin-left: 850px;
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  gap: 70px;
+  font-family: Oswald;
+}
+
+
+.account{
+  cursor: pointer;
+  animation: movee 1s;
+}
+.about_us{
+  cursor: pointer;
+  animation: movee 3s;
+}
+.costumers{
+  cursor: pointer;
+  animation: movee 2s;
+}
+
+@keyframes movee{
+  0%{
+    margin-top: -80px;
+  }
+}
+
+
+.account::after {
+    content: ''; 
+    position: absolute;
+    left: 0px; 
+    bottom: 0px;
+    width: 0px; 
+    height: 3px; 
+    background-color: #000; 
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  
+  .account:hover::after {
+    width: 22%; 
+  }
+
+
+  
+.about_us::after {
+  content: ''; 
+  position: absolute;
+  left: 185px; 
+  bottom: 0px;
+  width: 0px; 
+  height: 3px; 
+  background-color: #000; 
+  transition: width 0.3s ease-in-out; 
+}
+
+
+.about_us:hover::after {
+  width: 24%; 
+}
+
+
+
+.costumers::after {
+  content: ''; 
+  position: absolute;
+  left: 385px; 
+  bottom: 0px;
+  width: 0px; 
+  height: 3px; 
+  background-color: #000; 
+  transition: width 0.3s ease-in-out; 
+}
+
+
+.costumers:hover::after {
+  width: 28%; 
+}
+
+
+.imgback{
+  width: 1350px;
+  margin-top: 200px;
+  margin-left: 50px;
+  position: absolute;
+  z-index: 5;
+  }
+
+
+
+.scimg{
+  position:absolute;
+  width: 471px;
+  will-change: transform;
+  animation: imgmove 2s;
+  z-index: 5;
+}
+
+.text{
+  margin-left: 560px;
+  font-size: 30px;
+  font-family: Oswald;
+  text-align:justify;
+  animation: textmove 3s;
+  z-index: 5;
+  color: white;
+}
+
+@keyframes textmove{
+  0%{
+    margin-top: 200px;
+    opacity: 0;
+  }
+}
+
+@keyframes imgmove{
+  0%{
+    margin-top: 200px;
+  }
+}
+
+
+.scimg2{
+  width: 500px;
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 230px;
+}
+
+.verticalline{
+  height: 627px;
+  width: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  margin-left: 520px;
+  animation: line 2s;
+}
+
+.verticalline2{
+  height: 750px;
+  margin-top: 230px;
+  width: 2px;
+  background-color: #000000;
+  position: absolute;
+  margin-left: 850px;
+  animation: line 2s;
+}
+
+@keyframes line{
+  0% {
+    margin-top: 630px;
+    height: 0px;
+    opacity: 0;
+  }
+}
+
+.stopbug{
+  background-color: #102E50;
+  height: 900px;
+  width: 1550px;
+  margin-left: -70px;
+  position: absolute;
+  margin-top: -70px;
+  z-index: -1;
+  border-radius: 0 0 40% 40%;
+}
+
+.stopbug2{
+  width: 2000px;
+  height: 1300px;
+  background-color: #E195AB;
+  position: absolute;
+  margin-left: -60px;
+  z-index: -2;
+  margin-top: -300px;
+  border-radius: 0 0 0% 50%;
+}
+
+.text2{
+  margin-left: 200px;
+  font-size: 30px;
+  font-family: Oswald;
+  text-align:right;
+  animation: textmove 3s;
+  z-index: 5;
+  color: rgb(0, 0, 0);
+  margin-top: 280px;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 0 0 0 100%;
+}
+
+
+
+
+
+
+
+
