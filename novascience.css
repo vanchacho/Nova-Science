@@ -5,7 +5,7 @@ body{
 
 .bar{
   height: 150px;
-  width: 110%;
+  width: 1550px;
   position: absolute;
   background:linear-gradient( 90deg, rgb(88, 180, 255), rgb(255, 255, 255));
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
